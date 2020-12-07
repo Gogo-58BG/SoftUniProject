@@ -10,7 +10,7 @@ def create_traxxas(request):
         }
         return render(request, 'create.html', context)
     else:
-        form = TraxxasForm(request.POST)
+        form = TraxxasForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
             return redirect('index')

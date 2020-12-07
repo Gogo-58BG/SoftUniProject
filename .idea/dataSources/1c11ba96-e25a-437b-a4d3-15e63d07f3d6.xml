@@ -803,7 +803,7 @@ false Zulu
     <database id="5" parent="1" name="traxxas_db">
       <ObjectId>16763</ObjectId>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>637</IntrospectionStateNumber>
+      <IntrospectionStateNumber>642</IntrospectionStateNumber>
       <Relations>sequence|table|16764|16766|1
 sequence|table|16775|16777|1
 sequence|table|16785|16787|1
@@ -883,7 +883,7 @@ sequence|table|16913|16915|1
       <Comment>standard public schema</Comment>
       <StateNumber>287</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>638</IntrospectionStateNumber>
+      <IntrospectionStateNumber>643</IntrospectionStateNumber>
       <Current>1</Current>
     </schema>
     <access-method id="21" parent="5" name="heap">
@@ -1078,16 +1078,16 @@ sequence|table|16913|16915|1
     </column>
     <column id="55" parent="43" name="title">
       <Position>2</Position>
-      <DataType>varchar(30)|0s</DataType>
+      <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>608</StateNumber>
+      <StateNumber>640</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="56" parent="43" name="category">
       <Position>3</Position>
-      <DataType>varchar(20)|0s</DataType>
+      <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>608</StateNumber>
+      <StateNumber>640</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="57" parent="43" name="image">
