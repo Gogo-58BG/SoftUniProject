@@ -73,6 +73,12 @@ footer {
     div.articles {
         max-height: 15em;
     }
+    div.item img.detail-img {
+    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
     footer {
         position: unset;
     }
