@@ -1,13 +1,12 @@
 {% extends 'shared/base.html' %}
 {% block site_content %}
    <!-- Home -->
-
-{% if traxxas %}
-    {% for traxas in traxxas %}
-    {% if traxas.category == 'monster_trucks' %}
     <div class="content">
+{% if traxxas %}
         <section class="js">
             <h2>Monster Trucks</h2>
+            {% for traxas in traxxas %}
+            {% if traxas.category == 'monster_trucks' %}
             <div class="articles">
                 <article>
                     <h3>{{ traxas.title }}</h3>
@@ -16,11 +15,13 @@
                     <a href="#" class="btn details-btn">Details</a>
                 </article>
             </div>
+                        {% endif %}
+{% endfor %}
         </section>
-        {% endif %}
-        {% if traxas.category == 'on_road_cars' %}
         <section class="CSharp">
             <h2>On Road Cars</h2>
+            {% for traxas in traxxas %}
+                    {% if traxas.category == 'on_road_cars' %}
             <div class="articles">
                 <article>
                     <h3>{{ traxas.title }}</h3>
@@ -29,11 +30,13 @@
                     <a href="#" class="btn details-btn">Details</a>
                 </article>
             </div>
+                                    {% endif %}
+{% endfor %}
         </section>
-            {% endif %}
-        {% if traxas.category == 'short_course_trucks' %}
         <section class="Java">
             <h2>Short Course Trucks</h2>
+            {% for traxas in traxxas %}
+                 {% if traxas.category == 'short_course_trucks' %}
             <div class="articles">
                 <article>
                     <h3>{{ traxas.title }}</h3>
@@ -42,11 +45,13 @@
                     <a href="#" class="btn details-btn">Details</a>
                 </article>
             </div>
-        </section>
             {% endif %}
-        {% if traxas.category == 'staduim_trucks' %}
+{% endfor %}
+        </section>
         <section class="Pyton">
             <h2>Stadium Trucks</h2>
+            {% for traxas in traxxas %}
+              {% if traxas.category == 'stadium_trucks' %}
             <div class="articles">
                 <article>
                     <h3>{{ traxas.title }}</h3>
@@ -55,12 +60,12 @@
                     <a href="#" class="btn details-btn">Details</a>
                 </article>
             </div>
-        </section>
     {% endif %}
     {% endfor %}
-    </div>
+        </section>
     {% else %}
             <!-- No articles message -->
     <h3 class="no-articles">No articles yet</h3>
     {% endif %}
+        </div>
 {% endblock %}
