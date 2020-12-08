@@ -5,12 +5,9 @@ from app.models import Traxxas
 
 def index(request):
     if Traxxas.objects.exists():
-        articles = Traxxas.objects.all()
-        # expenses = Expense.objects.all()
-        # expenses_cost = sum(expense.price for expense in expenses)
-        # profile.budget_left = profile.budget - expenses_cost
+        traxxas = Traxxas.objects.all()
         context = {
-            'articles': articles,
+            'traxxas': traxxas,
         }
         return render(request, 'index.html', context)
     else:

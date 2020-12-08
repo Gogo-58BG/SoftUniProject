@@ -1,68 +1,66 @@
 {% extends 'shared/base.html' %}
 {% block site_content %}
    <!-- Home -->
-        <!-- No articles message -->
-    <h3 class="no-articles">No articles yet</h3>
 
+{% if traxxas %}
+    {% for traxas in traxxas %}
+    {% if traxas.category == 'monster_trucks' %}
     <div class="content">
         <section class="js">
-            <h2>JavaScript</h2>
+            <h2>Monster Trucks</h2>
             <div class="articles">
                 <article>
-                    <h3>Arrays</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, excepturi magnam aliquid
-                        quamest fugit ipsa quidem
-                        impedit praesentium tempore placeat numquam blanditiis fuga soluta beatae perspiciatis voluptas
-                        atque obcaecati?</p>
-                    <a href="#" class="btn details-btn">Details</a>
-                </article>
-                <article>
-                    <h3>Objects</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, excepturi magnam aliquid
-                        quamest fugit ipsa quidem
-                        impedit praesentium tempore placeat numquam blanditiis fuga soluta beatae perspiciatis voluptas
-                        atque obcaecati?</p>
+                    <h3>{{ traxas.title }}</h3>
+                    <img class="detail-img" src="{{ traxas.image }}" alt="traxxas-image">
+                    <p>{{ traxas.description }}</p>
                     <a href="#" class="btn details-btn">Details</a>
                 </article>
             </div>
         </section>
+        {% endif %}
+        {% if traxas.category == 'on_road_cars' %}
         <section class="CSharp">
-            <h2>C#</h2>
+            <h2>On Road Cars</h2>
             <div class="articles">
                 <article>
-                    <h3>Dictionary</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, excepturi magnam aliquid
-                        quamest fugit ipsa quidem
-                        impedit praesentium tempore placeat numquam blanditiis fuga soluta beatae perspiciatis voluptas
-                        atque obcaecati?</p>
+                    <h3>{{ traxas.title }}</h3>
+                    <img class="detail-img" src="{{ traxas.image }}" alt="traxxas-image">
+                    <p>{{ traxas.description}}</p>
                     <a href="#" class="btn details-btn">Details</a>
                 </article>
             </div>
         </section>
+            {% endif %}
+        {% if traxas.category == 'short_course_trucks' %}
         <section class="Java">
-            <h2>Java</h2>
+            <h2>Short Course Trucks</h2>
             <div class="articles">
                 <article>
-                    <h3>JDK</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, excepturi magnam aliquid
-                        quamest fugit ipsa quidem impedit praesentium tempore placeat numquam blanditiis fuga soluta
-                        beatae perspiciatis voluptas atque obcaecati?</p>
+                    <h3>{{ traxas.title }}</h3>
+                    <img class="detail-img" src="{{ traxas.image }}" alt="traxxas-image">
+                    <p>{{ traxas.description }}</p>
                     <a href="#" class="btn details-btn">Details</a>
                 </article>
             </div>
         </section>
+            {% endif %}
+        {% if traxas.category == 'staduim_trucks' %}
         <section class="Pyton">
-            <h2>Pyton</h2>
+            <h2>Stadium Trucks</h2>
             <div class="articles">
                 <article>
-                    <h3>Gjango</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, excepturi magnam aliquid
-                        quamest fugit ipsa quidem
-                        impedit praesentium tempore placeat numquam blanditiis fuga soluta beatae perspiciatis voluptas
-                        atque obcaecati?</p>
+                    <h3>{{ traxas.title }}</h3>
+                    <img class="detail-img" src="{{ traxas.image }}" alt="traxxas-image">
+                    <p>{{ traxas.description }}</p>
                     <a href="#" class="btn details-btn">Details</a>
                 </article>
             </div>
         </section>
+    {% endif %}
+    {% endfor %}
     </div>
+    {% else %}
+            <!-- No articles message -->
+    <h3 class="no-articles">No articles yet</h3>
+    {% endif %}
 {% endblock %}
