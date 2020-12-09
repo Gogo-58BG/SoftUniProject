@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 
 from app.forms.traxxas import TraxxasForm
+from app.models import Traxxas
 
 
 def create_traxxas(request):
@@ -20,26 +21,26 @@ def create_traxxas(request):
         return render(request, 'create.html', context)
 
 
-# def edit_recipe(request, pk):
-#     recipe = Recipe.objects.get(pk=pk)
-#     if request.method == 'GET':
-#         context = {
-#             'recipe': recipe,
-#             'form': RecipeForm(instance=recipe),
-#         }
-#         return render(request, 'edit.html', context)
-#     else:
-#         form = RecipeForm(request.POST, instance=recipe)
-#         if form.is_valid():
-#             form.save()
-#             return redirect('index')
-#         context = {
-#             'recipe': recipe,
-#             'form': form,
-#         }
-#         return render(request, 'create.html', context)
-#
-#
+def edit_traxxas(request, pk):
+    traxxas = Traxxas.objects.get(pk=pk)
+    if request.method == 'GET':
+        context = {
+            'traxxas': traxxas,
+            'form': TraxxasForm(instance=traxxas),
+        }
+        return render(request, 'edit.html', context)
+    else:
+        form = TraxxasForm(request.POST, instance=traxxas)
+        if form.is_valid():
+            form.save()
+            return redirect('index')
+        context = {
+            'traxxas': traxxas,
+            'form': form,
+        }
+        return render(request, 'create.html', context)
+
+
 # def delete_recipe(request, pk):
 #     recipe = Recipe.objects.get(pk=pk)
 #     if request.method == 'GET':
@@ -52,15 +53,12 @@ def create_traxxas(request):
 #         recipe.delete()
 #         return redirect('index')
 #
-#
-# def details_recipe(request, pk):
-#     if Recipe.objects.exists():
-#         recipe = Recipe.objects.get(pk=pk)
-#         # ingredients_list = Recipe.ingredients
-#         # ingredients_list.split(', ')
-#         # recipe.ingredients_list = ingredients_list
-#         context = {
-#             'recipe': recipe,
-#         }
-#         return render(request, 'details.html', context)
-#
+
+def details_traxxas(request, pk):
+    if Traxxas.objects.exists():
+        traxxas = Traxxas.objects.get(pk=pk)
+        context = {
+            'traxxas': traxxas,
+        }
+        return render(request, 'details.html', context)
+

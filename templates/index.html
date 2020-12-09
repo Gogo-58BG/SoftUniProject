@@ -12,8 +12,8 @@
                     <h3>{{ traxas.title }}</h3>
                     <img class="detail-img" src="{{ traxas.image.url }}" alt="traxxas-image">
                     <p>{{ traxas.description }}</p>
-                    <a href="#" class="btn details-btn">Details</a>
-                </article>
+                    <a href="{% url 'details traxxas' traxas.id %}" class="btn details-btn">Details</a>
+                 </article>
             </div>
                         {% endif %}
 {% endfor %}
@@ -27,7 +27,7 @@
                     <h3>{{ traxas.title }}</h3>
                     <img class="detail-img" src="{{ traxas.image.url }}" alt="traxxas-image">
                     <p>{{ traxas.description}}</p>
-                    <a href="#" class="btn details-btn">Details</a>
+<a href="{% url 'details traxxas' traxas.id %}" class="btn details-btn">Details</a>
                 </article>
             </div>
                                     {% endif %}
@@ -42,7 +42,7 @@
                     <h3>{{ traxas.title }}</h3>
                     <img class="detail-img" src="{{ traxas.image.url }}" alt="traxxas-image">
                     <p>{{ traxas.description }}</p>
-                    <a href="#" class="btn details-btn">Details</a>
+                    <a href="{% url 'details traxxas' traxas.id %}" class="btn details-btn">Details</a>
                 </article>
             </div>
             {% endif %}
@@ -57,7 +57,7 @@
                     <h3>{{ traxas.title }}</h3>
                     <img class="detail-img" src="{{ traxas.image.url }}" alt="traxxas-image">
                     <p>{{ traxas.description }}</p>
-                    <a href="#" class="btn details-btn">Details</a>
+                    <a href="{% url 'details traxxas' traxas.id %}" class="btn details-btn">Details</a>
                 </article>
             </div>
     {% endif %}

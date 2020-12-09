@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="21d29e84-a89a-4179-b89c-92d36a09f3bf" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -114,7 +117,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607251479666</updated>
-      <workItem from="1607251488500" duration="21061000" />
+      <workItem from="1607251488500" duration="27565000" />
     </task>
     <servers />
   </component>
@@ -126,38 +129,38 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="233" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1607365763942" />
-    <state width="1237" height="208" key="GridCell.Tab.0.bottom" timestamp="1607425268127">
+    <state width="1237" height="143" key="GridCell.Tab.0.bottom" timestamp="1607540307454">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="208" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1607425268127" />
-    <state width="1237" height="208" key="GridCell.Tab.0.center" timestamp="1607425268127">
+    <state width="1237" height="143" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1607540307454" />
+    <state width="1237" height="143" key="GridCell.Tab.0.center" timestamp="1607540307454">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="208" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1607425268127" />
-    <state width="1237" height="208" key="GridCell.Tab.0.left" timestamp="1607425268127">
+    <state width="1237" height="143" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1607540307454" />
+    <state width="1237" height="143" key="GridCell.Tab.0.left" timestamp="1607540307454">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="208" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1607425268127" />
-    <state width="1237" height="208" key="GridCell.Tab.0.right" timestamp="1607425268127">
+    <state width="1237" height="143" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1607540307454" />
+    <state width="1237" height="143" key="GridCell.Tab.0.right" timestamp="1607540307454">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="208" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1607425268127" />
-    <state width="1237" height="208" key="GridCell.Tab.1.bottom" timestamp="1607425268012">
+    <state width="1237" height="143" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1607540307454" />
+    <state width="1237" height="143" key="GridCell.Tab.1.bottom" timestamp="1607540307454">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="208" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1607425268012" />
-    <state width="1237" height="208" key="GridCell.Tab.1.center" timestamp="1607425268012">
+    <state width="1237" height="143" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1607540307454" />
+    <state width="1237" height="143" key="GridCell.Tab.1.center" timestamp="1607540307454">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="208" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1607425268012" />
-    <state width="1237" height="208" key="GridCell.Tab.1.left" timestamp="1607425268012">
+    <state width="1237" height="143" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1607540307454" />
+    <state width="1237" height="143" key="GridCell.Tab.1.left" timestamp="1607540307454">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="208" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1607425268012" />
-    <state width="1237" height="208" key="GridCell.Tab.1.right" timestamp="1607425268012">
+    <state width="1237" height="143" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1607540307454" />
+    <state width="1237" height="143" key="GridCell.Tab.1.right" timestamp="1607540307454">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="208" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1607425268012" />
+    <state width="1237" height="143" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1607540307454" />
     <state width="198" height="457" key="HiddenNamespacesPopup" timestamp="1607366206919">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -166,6 +169,17 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="540" y="200" key="com.intellij.database.actions.DdlActions$CreateObject$1/0.0.1280.680@0.0.1280.680" timestamp="1607365908560" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SoftUniProject$manage.coverage" NAME="manage Coverage Results" MODIFIED="1607363319208" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
