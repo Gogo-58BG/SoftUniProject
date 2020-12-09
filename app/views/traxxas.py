@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 
-from app.forms.traxxas import TraxxasForm
+from app.forms.traxxas import TraxxasForm, DeleteTraxxasForm
 from app.models import Traxxas
 
 
@@ -41,18 +41,18 @@ def edit_traxxas(request, pk):
         return render(request, 'create.html', context)
 
 
-# def delete_recipe(request, pk):
-#     recipe = Recipe.objects.get(pk=pk)
-#     if request.method == 'GET':
-#         context = {
-#             'recipe': recipe,
-#             'form': DeleteRecipeForm(instance=recipe),
-#         }
-#         return render(request, 'delete.html', context)
-#     else:
-#         recipe.delete()
-#         return redirect('index')
-#
+def delete_traxxas(request, pk):
+    traxxas = Traxxas.objects.get(pk=pk)
+    if request.method == 'GET':
+        context = {
+            'traxxas': traxxas,
+            'form': DeleteTraxxasForm(instance=traxxas),
+        }
+        return render(request, 'delete.html', context)
+    else:
+        traxxas.delete()
+        return redirect('index')
+
 
 def details_traxxas(request, pk):
     if Traxxas.objects.exists():
