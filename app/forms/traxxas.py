@@ -9,7 +9,7 @@ class TraxxasForm(forms.ModelForm):
         # widgets = {
         #     'image': forms.FileInput(attrs={'class': 'custom-file-input'}),
         # }
-        fields = '__all__'
+        exclude = ['user']
 
 
 class DeleteTraxxasForm(TraxxasForm):

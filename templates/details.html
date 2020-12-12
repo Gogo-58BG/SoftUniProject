@@ -8,8 +8,12 @@
             <strong>{{ traxxas.category }}</strong>
             <p>{{ traxxas.description }}</p>
             <div class="buttons">
+                {% if can_delete %}
                 <a href="{% url 'delete traxxas' traxxas.id %}" class="btn delete">Delete</a>
+                {% endif %}
+            {% if can_edit %}
                 <a href="{% url 'edit traxxas' traxxas.id %}" class="btn edit">Edit</a>
+            {% endif %}
 {#                <a href="#" class="btn edit">Back</a>#}
             </div>
         </div>
