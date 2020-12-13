@@ -3,7 +3,7 @@
    <!-- Home -->
     <div class="content">
 {% if traxxas %}
-        <section class="js">
+        <section class="Monster Trucks">
             <h2>Monster Trucks</h2>
             {% for traxas in traxxas %}
             {% if traxas.category == 'monster_trucks' %}
@@ -18,7 +18,7 @@
                         {% endif %}
 {% endfor %}
         </section>
-        <section class="CSharp">
+        <section class="On Road Cars">
             <h2>On Road Cars</h2>
             {% for traxas in traxxas %}
                     {% if traxas.category == 'on_road_cars' %}
@@ -33,7 +33,7 @@
                                     {% endif %}
 {% endfor %}
         </section>
-        <section class="Java">
+        <section class="Short Course Trucks">
             <h2>Short Course Trucks</h2>
             {% for traxas in traxxas %}
                  {% if traxas.category == 'short_course_trucks' %}
@@ -48,7 +48,7 @@
             {% endif %}
 {% endfor %}
         </section>
-        <section class="Pyton">
+        <section class="Stadium Trucks">
             <h2>Stadium Trucks</h2>
             {% for traxas in traxxas %}
               {% if traxas.category == 'stadium_trucks' %}
